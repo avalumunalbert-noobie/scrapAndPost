@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>itools </title>
+    <style type="text/css">
+        #header{
+text-align: center;
+
+        }
+        #description{
+text-align: center;
+font-size: 14px;
+        }
+        span{
+            text-align: center;
+        }
+        #bolden{
+            color: blue;
+            text-decoration-color: blue;
+            
+        }
+        #login{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="header">Itools </h1>
+    <h2 id="description"> Automate posting of contents on your facebook page</h2>
+    <span> we use facebook graph api and access token to automate posting of contents to your page programmatically</span><br>
+    <span> All you Need to do is login with your facebook account , then you will subscribe for the type of contents that you want to be posting on your page</span>
+<br/>
+    <b id="bolden">Contents That are Available For Automation </b>
+<ul>
+    
+    <li>Celebrity pictures</li>
+    <li>Trending </li>
+    <li>News</li>
+    <li>Comedy Videos/Reels</li>
+    <li>Sports</li>
+    <li>Quotes</li>
+    <Li>Tiktok Trends</Li>
+</ul>
+<span id="login"><a href="/aut/facebook">Login with your Facebook Account to contiue</a></span>
+
+<script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '660770602164297',
+        cookie     : true,
+        xfbml      : true,
+        version    : '{api-version}'
+      });
+        
+      FB.AppEvents.logPageView();   
+        
+    };
+  
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+</body>
+</html>

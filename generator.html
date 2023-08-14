@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Page Access Token Generator </title>
+    <style>
+        h1{
+            text-align: center;
+        };
+        span, div{
+            text-align: center;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Generate Faebook Page Access Token</h1><br>
+    <span>Geneerate your facebook page from your Facebook User access token and page ID</span>
+    <div>
+    <form action="/" method="post">
+      User Token:<input type="text" name="user-token" id="user-token" placeholder="Enter your facebook User Access Token..."><br>
+         Page ID:<input type="text" name="page-id" id="page-id" placeholder="Enter Page ID"><br>
+         <input type="Submit" id="submit" value="Generate Page Access Token"><br>
+         <br>
+         <br>
+         <div id="tokenDiv"><b>Page Access Token is :</b><span id="page-token"></span></div>
+    </form>
+    </div>
+</body>
+</html>
